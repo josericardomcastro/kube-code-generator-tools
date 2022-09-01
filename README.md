@@ -20,7 +20,8 @@ And will create theses files for the api:
 
 |                   | Docker image                                         |
 |-------------------|------------------------------------------------------|
-| Kubernetes v1.20+ | `josericardomcastro/kube-code-generator-tools:0.20.15` |
+| Kubernetes v1.22  | `josericardomcastro/kube-code-generator-tools:0.22.1` |
+| Kubernetes v1.20  | `josericardomcastro/kube-code-generator-tools:0.20.15` |
 
 ## How to use
 
@@ -37,7 +38,7 @@ docker run -it --rm \
     -e APIS_PKG=${PROJECT_PACKAGE}/pkg/apis \
     -e GROUPS_VERSION="sample:v1" \
     -e GENERATION_TARGETS="all" \
-    josericardomcastro/kube-code-generator-tools:0.20.15
+    josericardomcastro/kube-code-generator-tools:0.22.1
 ```
 
 ### Generate CRD manifest
@@ -49,7 +50,7 @@ docker run -it --rm \
     -e GO_PROJECT_ROOT=${SOURCE_PROJECT} \
     -e CRD_TYPES_PATH=${SOURCE_PROJECT}/pkg/apis \
     -e CRD_OUT_PATH=${SOURCE_PROJECT}/manifests \
-    josericardomcastro/kube-code-generator-tools:0.20.15 ./generate-crd.sh
+    josericardomcastro/kube-code-generator-tools:0.22.1 ./generate-crd.sh
 ```
 
 ### Credits

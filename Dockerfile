@@ -14,7 +14,7 @@
 
 FROM golang:1.16
 
-ARG K8S_VERSION="v0.20.15"
+ARG K8S_VERSION="v0.22.1"
 ARG CONTROLLER_TOOL_VERSION="0.7.0"
 
 RUN apt-get update && apt-get install -y git
